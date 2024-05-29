@@ -14,10 +14,11 @@ import { toast } from "react-hot-toast";
 
 export const Cart = () => {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
-  const { car } = useShop((state) => state);
+  const { car, setCar } = useShop((state) => state);
 
   const handleCheckOut = (onClose: () => void) => {
     toast.success("Checkout successful");
+    setCar([]);
     onClose();
   };
 
