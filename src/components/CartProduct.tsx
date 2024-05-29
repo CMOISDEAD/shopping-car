@@ -29,7 +29,7 @@ export const CartProduct = ({ product }: Props) => {
   };
 
   return (
-    <Card key={product.id}>
+    <Card isBlurred key={product.id}>
       <CardBody className="flex flex-col md:flex-row gap-2">
         <Image src={product.thumbnail} alt={product.title} />
         <div className="flex flex-col justify-between gap-2">

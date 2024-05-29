@@ -32,7 +32,11 @@ export const Cart = () => {
       >
         <LiaShoppingBagSolid />
       </Button>
-      <Modal isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Modal
+        isOpen={isOpen}
+        onOpenChange={onOpenChange}
+        className="bg-background/70 backdrop-blur"
+      >
         <ModalContent className="h-4/6">
           {(onClose) => (
             <>
