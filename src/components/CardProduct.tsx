@@ -56,8 +56,10 @@ export const CardProduct = ({ product }: Props) => {
             <p className="text-xs text-yellow-600 flex content-center items-center gap-1">
               stock: {product.stock}
             </p>
+            <p className="text-xs text-yellow-600 flex content-center items-center gap-1">
+              category: {product.category}
+            </p>
           </div>
-
           <Button
             isIconOnly
             size="sm"
